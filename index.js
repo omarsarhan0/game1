@@ -4,12 +4,19 @@ var userClickedPattern = [];
 var level = 0 ;
 var started=false;
 
-$(document).keydown(function(){
+// $(document).keydown(function(){
+//     if(!started){
+//     $("#level-title").text("Level " + level);
+//     nextSequence();
+//     started=true;}
+// })
+document.addEventListener("touchstart", function(event) {
     if(!started){
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started=true;}
-})
+             $("#level-title").text("Level " + level);
+             nextSequence();
+            started=true;}
+});
+
 
 
 
